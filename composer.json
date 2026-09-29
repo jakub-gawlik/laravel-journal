@@ -1,0 +1,69 @@
+{
+  "name": "jgawlik/laravel-journal",
+  "description": "A Laravel package providing a multi-user journal API with CRUD operations.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "journal",
+    "diary",
+    "api",
+    "rest"
+  ],
+  "homepage": "https://github.com/jakub-gawlik/laravel-journal",
+  "authors": [
+    {
+      "name": "Jakub Gawlik",
+      "email": "info@caasi.dev"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/jakub-gawlik/laravel-journal/issues",
+    "source": "https://github.com/jakub-gawlik/laravel-journal"
+  },
+  "require": {
+    "php": "^8.2",
+    "laravel/framework": "^12.0|^13.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^10.0|^11.0",
+    "pestphp/pest": "^3.0|^4.0",
+    "larastan/larastan": "^3.0",
+    "laravel/pint": "^1.18"
+  },
+  "suggest": {
+    "laravel/sanctum": "Required for the default auth:sanctum route middleware."
+  },
+  "autoload": {
+    "psr-4": {
+      "Jgawlik\\LaravelJournal\\": "src/",
+      "Jgawlik\\LaravelJournal\\Database\\Factories\\": "database/factories/",
+      "Jgawlik\\LaravelJournal\\Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jgawlik\\LaravelJournal\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "pest",
+    "analyse": "phpstan analyse",
+    "format": "pint"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jgawlik\\LaravelJournal\\JournalServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    },
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

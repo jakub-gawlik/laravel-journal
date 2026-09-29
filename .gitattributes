@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+# Keep development files out of the dist archive that Composer installs.
+/.github            export-ignore
+/tests              export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+/CLAUDE.md          export-ignore
+/phpstan.neon.dist  export-ignore
+/phpunit.xml.dist   export-ignore
