@@ -1,4 +1,6 @@
-# Laravel Journal
+<p align="center">
+  <img src="./assets/logo.svg" width="256" alt="logo">
+</p>
 
 [![CI](https://github.com/jakub-gawlik/laravel-journal/actions/workflows/ci.yml/badge.svg)](https://github.com/jakub-gawlik/laravel-journal/actions/workflows/ci.yml)
 [![Latest Version](https://img.shields.io/packagist/v/jgawlik/laravel-journal.svg)](https://packagist.org/packages/jgawlik/laravel-journal)
